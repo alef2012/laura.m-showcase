@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laura.M</title>
+    <!-- link stile css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- menu -->
+    <header>
+      <h1>Laura.M</h1>
+      <ul id="linksmenu">
+        <li><a onclick="closemenu()" href="#home">Home</a></li>
+        <li><a onclick="closemenu()" href="#Trabalhos">Trabalhos</a></li>
+        <li><a onclick="closemenu()" href="#Contateme">Contate-me</a></li>
+      </ul>
+      <img
+        onclick="clickmenu()"
+        src="assets/img/icons/menu.png"
+        alt="icone de menu"
+      />
+    </header>
+
+    <!-- card visit -->
+    <section id="home">
+      <h1>
+        <b>Laura Mendes</b> - Explorando Criatividade,<br />
+        Composição e Expressão Visual
+      </h1>
+
+      <p>
+        Olá, sou Laura Mendes, uma entusiasta do design com sede em Lisboa,
+        Portugal. Minhas habilidades abrangem desde a manipulação criativa de
+        imagens no Photoshop até a composição musical e a escrita expressiva.
+        Minha paixão pelo design gráfico me conduz a explorar formas de
+        transformar conceitos em realidade visual. Como alguém profundamente
+        comprometida em aprimorar a estética e a funcionalidade, estou sempre em
+        busca de aprender algo novo diariamente, enriquecendo meu repertório
+        criativo.
+      </p>
+    </section>
+    <!--  my works -->
+    <div id="Trabalhos">
+      <h1>Meus Trabalhos Recentes</h1>
+      <!-- primeira linha de img -->
+      <figure>
+        <img
+          class="imgOne"
+          src="assets/img/computerPink.webp"
+          alt="computador rosa"
+        />
+        <img
+          class="imgTwo"
+          src="assets/img/cityCyberpunk.jpg"
+          alt="cidade cyber pank"
+        />
+      </figure>
+      <!-- segunda linha de iamgem -->
+      <figure>
+        <img class="imgTwo" src="assets/img/darkCamp.png" alt="campo negro" />
+        <img class="imgOne" src="assets/img/milk.jpg" alt="leite" />
+      </figure>
+    </div>
+    <!-- rodapé do site -->
+    <footer id="Contateme">
+      <h1>Vamos conectar! 🖐</h1>
+      <p>
+        Estou ansiosa para receber suas mensagens, seja para explorar
+        oportunidades empolgantes <br />
+        ou para trocar algumas palavras amigas! Sinta-se à vontade para entrar
+        em contato.
+      </p>
+      <ul>
+        <li>
+          <!-- LINKEDIN -->
+          <a target="_blank" href="#" title="Linkedin"
+            ><img src="assets/img/icons/linkedin.png" alt="Linkedin"
+          /></a>
+        </li>
+        <li>
+          <!-- fACEBOOK -->
+          <a target="_blank" href="#" title="Facebook"
+            ><img src="assets/img/icons/facebook.png" alt="Facebook"
+          /></a>
+        </li>
+        <li>
+          <!-- INSTAGRAM -->
+          <a target="_blank" href="#" title="Instagram"
+            ><img src="assets/img/icons/instagram.png" alt="instagram"
+          /></a>
+        </li>
+      </ul>
+    </footer>
+    <!-- java script -->
+    <script>
+      // OPEN MENU
+      function clickmenu() {
+        if (linksmenu.style.display == 'flex') {
+          linksmenu.style.display = 'none'
+        } else {
+          linksmenu.style.display = 'flex'
+        }
+      }
+      // CLOSE MENU
+      function closemenu() {
+        if (window.screen.width < 769) {
+          linksmenu.style.display = 'none'
+        }
+      }
+    </script>
+  </body>
+</html>
